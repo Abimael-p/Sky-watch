@@ -23,6 +23,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
+  background-color: #51b4e8;
 }
 
 .container__weather {
