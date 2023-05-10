@@ -1,0 +1,101 @@
+body {
+  background: radial-gradient(50% 50% at 50% 50%, #d5f3ff 0%, #51b4e8 100%);
+}
+
+.loading__weather{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-size: 80px;
+  color: rgb(32, 32, 210);
+}
+
+.main__title {
+  font-size: 3rem;
+  color: #FFFFFF;
+  text-align: center;
+
+}
+
+.weather__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__weather {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.temperature__weather {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  color: blue;
+}
+
+.icon__weather {
+  width: 8rem;
+}
+
+.weather__description h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.weather__description p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.country__current {
+  font-size: 1.5rem;
+  color: blue;
+  text-align: center;
+}
+
+.button__degree {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button__click {
+  font-size: 1.5rem;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+@media (max-width: 987px) {
+  .temperature__weather {
+    font-size: 3rem;
+  }
+  .icon__weather {
+    width: 5rem;
+  }
+  .weather__description h2 {
+    font-size: 2rem;
+  }
+  .weather__description p {
+    font-size: 1.2rem;
+  }
+  .country__current {
+    font-size: 1.2rem;
+  }
+  .button__click {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 233px) {
+  .container__weather {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
