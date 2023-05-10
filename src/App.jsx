@@ -37,8 +37,8 @@ function App() {
                     : weather.temperature.farenheit.toFixed(0)}{" "}
                   °{isCelsius ? "C" : "F"}
                 </p>
-                <div className="icon__weather">
-                  <img
+                <div className="icon__container">
+                  <img className="icon__img"
                     src={weather.weather.icon}
                     alt={weather.weather.description}
                   />

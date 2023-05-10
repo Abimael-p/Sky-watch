@@ -14,7 +14,7 @@ body {
 .main__title {
   font-size: 3rem;
   color: #FFFFFF;
-  text-align: center;
+  margin: 30px;
 
 }
 
@@ -39,7 +39,10 @@ body {
 }
 
 .icon__weather {
-  width: 8rem;
+  width: 8em;
+}
+.icon__img{
+  width: 20em;
 }
 
 .weather__description h2 {
@@ -80,6 +83,9 @@ body {
   .icon__weather {
     width: 5rem;
   }
+  .icon__img{
+    width: 10em;
+  }
   .weather__description h2 {
     font-size: 2rem;
   }
@@ -93,7 +99,7 @@ body {
     font-size: 1.2rem;
   }
 }
-@media (max-width: 233px) {
+@media (max-width: 287px) {
   .container__weather {
     display: flex;
     flex-direction: column-reverse;
