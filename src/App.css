@@ -79,6 +79,9 @@ body {
   cursor: pointer;
 }
 @media (max-width: 987px) {
+  .loading__weather{
+    font-size: 10vh;   
+  }
   .temperature__weather {
     font-size: 3rem;
   }
@@ -101,7 +104,18 @@ body {
     font-size: 1.2rem;
   }
 }
+@media (max-width: 425px) {
+  .loading__weather{
+    font-size: 6vh;
+  }
+}
 @media (max-width: 287px) {
+  .loading__weather{
+    position: static;
+    font-size: 4vh;  
+    text-align: center;
+    margin: 4vh;
+  }
   .container__weather {
     display: flex;
     flex-direction: column-reverse;
