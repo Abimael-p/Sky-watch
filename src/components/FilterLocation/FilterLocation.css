@@ -1,0 +1,33 @@
+.container__filter_search {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
+
+.container_location_search {
+  display: flex;
+}
+
+.input_location {
+  font-size: 80%;
+  border-radius: 1vh;
+  border: 1px solid blue;
+}
+
+.container_btn_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_btn_search button {
+  color: rgb(17, 97, 209);
+  font-size: 2vh;
+
+  border: 1px solid blue;
+  border-radius: 1vh;
+}
+
+.container_btn_search button:hover {
+  transform: translateY(-2px);
+}

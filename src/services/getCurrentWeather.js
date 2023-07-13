@@ -30,7 +30,7 @@ export const getCurrentWeather = async (lat, lon) => {
         farenheit: kelvinToFarenheit(res.data.main.temp),
       },
     };
-    return weatherInfo;
+   return weatherInfo;
   } catch (error) {
     console.log(error);
   }
