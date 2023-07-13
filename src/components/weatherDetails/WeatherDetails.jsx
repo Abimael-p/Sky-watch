@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getCoordinates } from "../../services/getCoordinates";
 import { getCurrentWeather } from "../../services/getCurrentWeather";
 import FilterLocation from "../FilterLocation/FilterLocation";
-import "./weatherDetails.css";
+import "./WeatherDetails.css";
 
 const WeatherDetails = () => {
   const [weather, setWeather] = useState(null);
