@@ -23,6 +23,7 @@ export const getCurrentWeather = async (lat, lon) => {
         main: res.data.weather[0].main,
         description: res.data.weather[0].description,
         icon: getIconById(res.data.weather[0].icon),
+        icon1: res.data.weather[0].icon
       },
       temperature: {
         kelvin: res.data.main.temp,
