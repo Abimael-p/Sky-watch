@@ -1,15 +1,15 @@
-import ClearSkyDay from "./components/animations/ClearSkyDay";
-import ClearSkyNight from "./components/animations/ClearSkyNight";
-import FewCloudsDay from "./components/animations/FewCloudsDay";
-import FewCloudsNight from "./components/animations/FewCloudsNight";
-import ScatteredClouds from "./components/animations/ScatteredClouds";
-import BrokenClouds from "./components/animations/BrokenClouds";
-import ShowerRain from "./components/animations/ShowerRain";
-import RainDay from "./components/animations/RainDay";
-import RainNight from "./components/animations/RainNight";
-import Thunderstorm from "./components/animations/Thunderstorm";
-import Snow from "./components/animations/Snow";
-import Mist from "./components/animations/Mist";
+import ClearSkyDay from "../components/animations/ClearSkyDay/ClearSkyDay";
+import ClearSkyNight from "../components/animations/ClearSkyNight/ClearSkyNight";
+import FewCloudsDay from "../components/animations/FewCloudsDay/FewCloudsDay";
+import FewCloudsNight from "../components/animations/FewCloudsNight/FewCloudsNight";
+import ScatteredClouds from "../components/animations/ScatteredClouds/ScatteredClouds";
+import BrokenClouds from "../components/animations/BrokenClouds/BrokenClouds";
+import ShowerRain from "../components/animations/ShowerRain/ShowerRain";
+import RainDay from "../components/animations/RainDay/RainDay";
+import RainNight from "../components/animations/RainNight/RainNight";
+import Thunderstorm from "../components/animations/Thunderstorm/Thunderstorm";
+import Snow from "../components/animations/Snow/Snow";
+import Mist from "../components/animations/Mist/Mist";
 
 export const animationMap = {
   "01d": ClearSkyDay,

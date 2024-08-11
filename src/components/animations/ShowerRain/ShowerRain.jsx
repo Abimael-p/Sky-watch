@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { createRain, clearRain } from "../../../utils/animationsEffect/rain";
 import './ShowerRain.css';
 
-const ShowerRain = () => {
+const ShowerRain = ({ playSound, onSoundError }) => {
   const rainContainer = useRef(null);
 
   useEffect(() => {
