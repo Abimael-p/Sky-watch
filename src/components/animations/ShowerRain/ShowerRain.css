@@ -28,33 +28,37 @@
     }
 }
 
-.sparkles {
-    position: absolute;
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%);
-    border-radius: 50%;
-    opacity: 0;
-    animation: twinkle linear infinite, glow ease-in-out infinite;
-    z-index: 5;
-  }
-  
-  /* Animación de parpadeo */
-  @keyframes twinkle {
-    0%, 100% {
+.lightning-flash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+  animation: flash ease-in-out;
+}
+
+@keyframes flash {
+  0% {
       opacity: 0;
-    }
-    50% {
+  }
+  10% {
       opacity: 1;
-    }
   }
-  
-  /* Efecto de iluminación */
-  @keyframes glow {
-    0%, 100% {
-      transform: scale(0.8);
-      box-shadow: 0 0 5px rgba(255, 255, 255, 0.671), 0 0 15px rgba(255, 255, 255, 0.575), 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-    50% {
-      transform: scale(1.2);
-      box-shadow: 0 0 10px rgba(255, 254, 254, 0.836), 0 0 30px rgba(255, 255, 255, 0.582), 0 0 40px rgba(255, 255, 255, 0.3);
-    }
+  20% {
+      opacity: 0;
   }
+  30% {
+      opacity: 1;
+  }
+  40%, 100% {
+      opacity: 0;
+  }
+}
+
+.lightning-flash.active {
+  animation: flash 0.5s ease-in-out;
+}
