@@ -1,7 +1,7 @@
-import { useState } from "react";
 import { getCurrentLocation } from "../../services/getCurrentLocation";
-import "./FilterLocation.css";
 import { getCurrentWeather } from "../../services/getCurrentWeather";
+import { useState } from "react";
+import "./FilterLocation.css";
 
 const FilterLocation = ({ setWeather }) => {
   const [locationCountry, setLocationCountry] = useState("");
@@ -11,6 +11,7 @@ const FilterLocation = ({ setWeather }) => {
     const lat = location.lat;
     const lon = location.lon;
     const weatherLocation = await getCurrentWeather(lat, lon);
+
     setWeather(weatherLocation);
   };
 
@@ -20,21 +21,20 @@ const FilterLocation = ({ setWeather }) => {
   };
 
   return (
-    <div className="container__filter_search">
-      <form className="container_location_search" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={locationCountry}
-          onChange={(e) => setLocationCountry(e.target.value)}
-          className="input_location"
-        />
-        <div className="container_btn_search">
-          <button type="submit">
-            <i>search</i>
-          </button>
-        </div>
-      </form>
-    </div>
+    <form className="container_location_search" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        placeholder="search for city (“Examplo: Paris”)"
+        value={locationCountry}
+        onChange={(e) => setLocationCountry(e.target.value)}
+        className="input_location"
+      />
+      <div className="container_btn_search">
+        <button type="submit">
+          <i className='bx bx-search'></i>
+        </button>
+      </div>
+    </form>
   );
 };
 
