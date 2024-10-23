@@ -39,7 +39,7 @@ const WeatherDetails = ({ weatherDetail }) => {
 
   if (loading) {
     return <div className="loading__weather">
-        <LoadingWeather />
+      <LoadingWeather />
     </div>;
   }
 

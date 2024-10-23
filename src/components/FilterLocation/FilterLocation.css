@@ -10,7 +10,7 @@
 }
 
 .input_location {
-  font-size: 1.6vh;
+  font-size: 1.7vh;
   width: 33vh;
   height: 5vh;
   outline: none;
@@ -34,5 +34,5 @@
 
 .container_btn_search button:hover {
   cursor: pointer;
-  scale: 1.2;
+  scale: 1.1;
 }
